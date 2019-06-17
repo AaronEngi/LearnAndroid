@@ -1,11 +1,13 @@
 package wang.tyrael.learnandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
+import wang.tyrael.learnandroid.fragment.LearnDialogFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ConstraintLayoutActivity.class));
+            }
+        });
+        findViewById(R.id.bn_dialog_fragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogFragment dialogFragment = new LearnDialogFragment();
+                dialogFragment.show(getSupportFragmentManager(), "LearnDialogFragment");
             }
         });
     }
