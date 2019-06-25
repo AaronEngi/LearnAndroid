@@ -1,6 +1,6 @@
 package wang.tyrael.learnandroid.jni;
 
-public class JNI {
+public class NativeFunction {
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
@@ -11,4 +11,10 @@ public class JNI {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
+
+    public native int sizeOfLong();
+
+    public native int sizeOfJlong();
+
+    public native void testLong(long l);
 }
