@@ -1,4 +1,4 @@
-package wang.tyrael.learnandroid;
+package wang.tyrael.learnandroid.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import java.util.Arrays;
 import java.util.List;
+
+import wang.tyrael.learnandroid.R;
 
 public class ListViewActivity extends AppCompatActivity {
     List<String> data = Arrays.asList("a", "b", "c");

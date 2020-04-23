@@ -1,7 +1,9 @@
-package wang.tyrael.learnandroid;
+package wang.tyrael.learnandroid.view.layout;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import wang.tyrael.learnandroid.R;
 
 public class ConstraintLayoutActivity extends Activity {
 

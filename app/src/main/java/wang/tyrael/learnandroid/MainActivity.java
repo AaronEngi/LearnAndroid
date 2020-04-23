@@ -1,5 +1,6 @@
 package wang.tyrael.learnandroid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import wang.tyrael.learnandroid.fragment.LearnDialogFragment;
+import wang.tyrael.learnandroid.view.ImageViewActivity;
+import wang.tyrael.learnandroid.view.ListViewActivity;
+import wang.tyrael.learnandroid.view.layout.ConstraintLayoutActivity;
+import wang.tyrael.learnandroid.view.layout.GridLayoutActivity;
+import wang.tyrael.learnandroid.view.recyclerview.RecyclerViewGridLayoutActivity;
+import wang.tyrael.learnandroid.view.toast.ToastActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,5 +47,34 @@ public class MainActivity extends AppCompatActivity {
                 dialogFragment.show(getSupportFragmentManager(), "LearnDialogFragment");
             }
         });
+        findViewById(R.id.bn_grid_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RecyclerViewGridLayoutActivity.class));
+            }
+        });
+        findViewById(R.id.bn_image_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ImageViewActivity.class));
+            }
+        });
+        findViewById(R.id.bn_grid_layout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, GridLayoutActivity.class));
+            }
+        });
+        setStartActivityListener(R.id.bn_toast, ToastActivity.class);
     }
+
+    private void setStartActivityListener(int viewId, final Class<? extends Activity> activityToStart) {
+        findViewById(viewId).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, activityToStart));
+            }
+        });
+    }
+
 }
