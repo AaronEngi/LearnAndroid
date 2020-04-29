@@ -3,15 +3,18 @@
     package="wang.tyrael.learnandroid">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
+        android:name=".LearnApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.toast.ToastActivity"></activity>
+        <activity android:name=".view.systemalert.LearnSystemAlertActivity"></activity>
+        <activity android:name=".view.toast.ToastActivity" />
         <activity android:name=".view.layout.GridLayoutActivity" />
         <activity android:name=".view.ImageViewActivity" />
         <activity android:name=".view.recyclerview.RecyclerViewGridLayoutActivity" />

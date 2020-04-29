@@ -14,6 +14,7 @@ import wang.tyrael.learnandroid.view.ListViewActivity;
 import wang.tyrael.learnandroid.view.layout.ConstraintLayoutActivity;
 import wang.tyrael.learnandroid.view.layout.GridLayoutActivity;
 import wang.tyrael.learnandroid.view.recyclerview.RecyclerViewGridLayoutActivity;
+import wang.tyrael.learnandroid.view.systemalert.LearnSystemAlertActivity;
 import wang.tyrael.learnandroid.view.toast.ToastActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         setStartActivityListener(R.id.bn_toast, ToastActivity.class);
+        setStartActivityListener(R.id.bn_system_alert, LearnSystemAlertActivity.class);
     }
 
     private void setStartActivityListener(int viewId, final Class<? extends Activity> activityToStart) {
