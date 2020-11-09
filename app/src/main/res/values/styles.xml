@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LearnBackgoundRed" parent="Theme.AppCompat">
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <style name="LearnBackgoundBlue">
+        <item name="android:background">@color/blue</item>
+    </style>
+
 </resources>

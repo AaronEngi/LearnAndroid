@@ -12,13 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="StorageFiller"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/bn_background" />
 
     <Button
         android:id="@+id/bn_listview"
@@ -44,8 +43,18 @@
         android:layout_marginRight="8dp"
         android:text="ConstraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bn_relative_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bn_listview" />
+
+    <Button
+        android:id="@+id/bn_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bn_constraintlayout"
+        app:layout_constraintTop_toTopOf="@+id/bn_constraintlayout" />
 
     <Button
         android:id="@+id/bn_dialog_fragment"
@@ -105,5 +114,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bn_toast" />
+
+    <Button
+        android:id="@+id/bn_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bn_textview"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bn_system_alert" />
+
+    <Button
+        android:id="@+id/bn_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bn_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/bn_system_alert" />
+
+    <Button
+        android:id="@+id/bn_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/min_xxx_bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MinXXX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bn_edittext" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

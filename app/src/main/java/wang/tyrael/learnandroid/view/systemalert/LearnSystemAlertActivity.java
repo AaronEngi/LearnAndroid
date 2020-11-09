@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -63,6 +64,12 @@ public class LearnSystemAlertActivity extends AppCompatActivity {
                 builder.setPositiveButton("关闭窗口", null);
                 builder.setCancelable(false);
                 AlertDialog dialog = builder.create();
+
+//                dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_TOAST);
+
+//                dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION);
+//                dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_STARTING);
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     //noinspection ConstantConditions
                     dialog.getWindow().setType((WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY));
@@ -74,6 +81,9 @@ public class LearnSystemAlertActivity extends AppCompatActivity {
                     dialog.show();
                 } catch (WindowManager.BadTokenException e) {
                     Toast.makeText(LearnSystemAlertActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+                } catch (Throwable throwable){
+                    //todo do not commit
+                    Log.d("tyraelTag", "catch", throwable);
                 }
             }
         });

@@ -13,7 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.systemalert.LearnSystemAlertActivity"></activity>
+        <activity android:name=".view.MinXxxActivity"></activity>
+        <activity android:name=".view.popupwindow.PopupLocationActivity" />
+        <activity
+            android:name=".view.background.LearnBackgroundActivity"
+            android:theme="@style/LearnBackgoundRed" />
+        <activity android:name=".view.TextViewActivity" />
+        <activity android:name=".view.edittext.NoImeEditTextActivity" />
+        <activity android:name=".view.layout.CenterWithoutOverlapActivity" />
+        <activity android:name=".view.systemalert.LearnSystemAlertActivity" />
         <activity android:name=".view.toast.ToastActivity" />
         <activity android:name=".view.layout.GridLayoutActivity" />
         <activity android:name=".view.ImageViewActivity" />
