@@ -1,0 +1,17 @@
+//use java library
+apply plugin: 'java-library'
+//use groovy library
+//apply plugin: 'groovy'
+sourceSets {
+    main{
+//      groovy{
+//            srcDir 'src/main/groovy'
+//        }
+        java{
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}

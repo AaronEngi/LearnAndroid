@@ -14,11 +14,13 @@ import wang.tyrael.learnandroid.view.ImageViewActivity;
 import wang.tyrael.learnandroid.view.ListViewActivity;
 import wang.tyrael.learnandroid.view.MinXxxActivity;
 import wang.tyrael.learnandroid.view.TextViewActivity;
+import wang.tyrael.learnandroid.view.ViewVisibilityActivity;
 import wang.tyrael.learnandroid.view.background.LearnBackgroundActivity;
 import wang.tyrael.learnandroid.view.edittext.NoImeEditTextActivity;
 import wang.tyrael.learnandroid.view.layout.ConstraintLayoutActivity;
 import wang.tyrael.learnandroid.view.layout.GridLayoutActivity;
-import wang.tyrael.learnandroid.view.layout.CenterWithoutOverlapActivity;
+import wang.tyrael.learnandroid.view.layout.RelativeLayoutActivity;
+import wang.tyrael.learnandroid.view.layout.TableLayoutActivity;
 import wang.tyrael.learnandroid.view.recyclerview.RecyclerViewGridLayoutActivity;
 import wang.tyrael.learnandroid.view.systemalert.LearnSystemAlertActivity;
 import wang.tyrael.learnandroid.view.toast.ToastActivity;
@@ -73,11 +75,14 @@ public class MainActivity extends AppCompatActivity {
         setStartActivityListener(R.id.bn_system_alert, LearnSystemAlertActivity.class);
 
         setStartActivityListener(R.id.bn_constraintlayout, ConstraintLayoutActivity.class);
-        setStartActivityListener(R.id.bn_relative_layout, CenterWithoutOverlapActivity.class);
+        setStartActivityListener(R.id.bn_relative_layout, RelativeLayoutActivity.class);
         setStartActivityListener(R.id.bn_edittext, NoImeEditTextActivity.class);
         setStartActivityListener(R.id.bn_textview, TextViewActivity.class);
         setStartActivityListener(R.id.bn_background, LearnBackgroundActivity.class);
         setStartActivityListener(binding.minXxxBn, MinXxxActivity.class);
+        setStartActivityListener(binding.tableLayoutButton, TableLayoutActivity.class);
+        setStartActivityListener(binding.viewVisibilityBn, ViewVisibilityActivity.class);
+
     }
 
     private void setStartActivityListener(View view, final Class<? extends Activity> activityToStart) {

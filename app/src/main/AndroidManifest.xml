@@ -13,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MinXxxActivity"></activity>
+        <activity android:name=".view.ViewVisibilityActivity"></activity>
+        <activity android:name=".view.layout.TableLayoutActivity" />
+        <activity android:name=".view.layout.RelativeLayoutActivity" />
+        <activity android:name=".view.MinXxxActivity" />
         <activity android:name=".view.popupwindow.PopupLocationActivity" />
         <activity
             android:name=".view.background.LearnBackgroundActivity"
