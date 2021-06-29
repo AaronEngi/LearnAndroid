@@ -19,6 +19,7 @@ import wang.tyrael.learnandroid.view.background.LearnBackgroundActivity;
 import wang.tyrael.learnandroid.view.edittext.NoImeEditTextActivity;
 import wang.tyrael.learnandroid.view.layout.ConstraintLayoutActivity;
 import wang.tyrael.learnandroid.view.layout.GridLayoutActivity;
+import wang.tyrael.learnandroid.view.layout.LinearLayoutActivity;
 import wang.tyrael.learnandroid.view.layout.RelativeLayoutActivity;
 import wang.tyrael.learnandroid.view.layout.TableLayoutActivity;
 import wang.tyrael.learnandroid.view.recyclerview.RecyclerViewGridLayoutActivity;
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         setStartActivityListener(binding.minXxxBn, MinXxxActivity.class);
         setStartActivityListener(binding.tableLayoutButton, TableLayoutActivity.class);
         setStartActivityListener(binding.viewVisibilityBn, ViewVisibilityActivity.class);
+        setStartActivityListener(binding.viewVisibilityBn, LinearLayoutActivity.class);
 
     }
 
