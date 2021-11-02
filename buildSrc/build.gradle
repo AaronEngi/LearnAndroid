@@ -10,8 +10,11 @@ sourceSets {
         java{
             srcDir 'src/main/java'
         }
-        resources {
-            srcDir 'src/main/resources'
-        }
+        //注意去除resource目录，否则 gradle config 过不了
     }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }

@@ -8,6 +8,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import com.github.aaronengi.learn.android.popupwindow.PopupWindowActivity;
+
 import wang.tyrael.learnandroid.databinding.ActivityMainBinding;
 import wang.tyrael.learnandroid.fragment.LearnDialogFragment;
 import wang.tyrael.learnandroid.view.ImageViewActivity;
@@ -84,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         setStartActivityListener(binding.tableLayoutButton, TableLayoutActivity.class);
         setStartActivityListener(binding.viewVisibilityBn, ViewVisibilityActivity.class);
         setStartActivityListener(binding.viewVisibilityBn, LinearLayoutActivity.class);
+        setStartActivityListener(binding.popupwindowButton, PopupWindowActivity.class);
 
     }
 

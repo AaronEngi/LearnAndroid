@@ -1,11 +1,11 @@
 package wang.tyrael.learnandroid;
 
-import android.app.Application;
+import androidx.multidex.MultiDexApplication;
 
-public class LearnApplication extends Application {
+public class LearnApplication extends MultiDexApplication {
     private static LearnApplication learnApplication;
 
-    public static LearnApplication get(){
+    public static LearnApplication get() {
         return learnApplication;
     }
 

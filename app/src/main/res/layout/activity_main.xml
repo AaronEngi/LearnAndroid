@@ -72,6 +72,8 @@
             android:layout_marginRight="8dp"
             android:text="DialogFragment"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bn_constraintlayout" />
 
@@ -177,6 +179,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/min_xxx_bn" />
+
+        <Button
+            android:id="@+id/popupwindow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PopupWindow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bn_dialog_fragment"
+            app:layout_constraintTop_toTopOf="@+id/bn_dialog_fragment" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

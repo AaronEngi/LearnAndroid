@@ -13,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.layout.LinearLayoutActivity"></activity>
+        <activity
+            android:name="com.github.aaronengi.learn.android.popupwindow.PopupWindowActivity"
+            android:exported="false" />
+        <activity android:name=".view.layout.LinearLayoutActivity" />
         <activity android:name=".view.ViewVisibilityActivity" />
         <activity android:name=".view.layout.TableLayoutActivity" />
         <activity android:name=".view.layout.RelativeLayoutActivity" />
@@ -32,7 +35,9 @@
         <activity android:name=".view.recyclerview.RecyclerViewGridLayoutActivity" />
         <activity android:name=".view.layout.ConstraintLayoutActivity" />
         <activity android:name=".view.ListViewActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,6 +47,7 @@
         <activity
             android:name=".StorageFillerActivity"
             android:label="StorageFillerActivity"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
