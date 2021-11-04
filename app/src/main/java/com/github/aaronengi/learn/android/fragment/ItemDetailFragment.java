@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import com.github.aaronengi.learn.android.fragment.databinding.FragmentItemDetailBinding;
 import com.github.aaronengi.learn.android.fragment.placeholder.PlaceholderContent;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import wang.tyrael.learnandroid.R;
+import wang.tyrael.learnandroid.databinding.FragmentItemDetailBinding;
 
 /**
  * A fragment representing a single Item detail screen.

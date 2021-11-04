@@ -9,7 +9,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.github.aaronengi.learn.android.fragment.databinding.ActivityItemDetailBinding;
+import wang.tyrael.learnandroid.R;
+import wang.tyrael.learnandroid.databinding.ActivityItemDetailBinding;
 
 public class ItemDetailHostActivity extends AppCompatActivity {
 

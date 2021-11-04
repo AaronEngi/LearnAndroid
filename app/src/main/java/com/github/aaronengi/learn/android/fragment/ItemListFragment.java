@@ -16,13 +16,13 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.github.aaronengi.learn.android.fragment.databinding.FragmentItemListBinding;
-import com.github.aaronengi.learn.android.fragment.databinding.ItemListContentBinding;
 import com.github.aaronengi.learn.android.fragment.placeholder.PlaceholderContent;
 
 import java.util.List;
 
 import wang.tyrael.learnandroid.R;
+import wang.tyrael.learnandroid.databinding.FragmentItemListBinding;
+import wang.tyrael.learnandroid.databinding.ItemListContentBinding;
 
 /**
  * A fragment representing a list of Items. This fragment

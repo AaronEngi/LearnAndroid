@@ -15,6 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name="com.github.aaronengi.learn.android.intent.IntentActivity"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:targetApi="24">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.github.aaronengi.learn.android.fragment.ItemDetailHostActivity"
             android:exported="false"
             android:label="@string/title_activity_item_detail_host"
