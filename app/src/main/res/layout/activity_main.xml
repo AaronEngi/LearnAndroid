@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="learn.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity">
+        tools:context="learn.MainActivity">
 
         <Button
             android:id="@+id/bn_storagefiller"
@@ -44,11 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:text="ConstraintLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bn_relative_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bn_listview" />
 
@@ -58,8 +54,8 @@
             android:layout_height="wrap_content"
             android:text="RelativeLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bn_constraintlayout"
-            app:layout_constraintTop_toTopOf="@+id/bn_constraintlayout" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bn_constraintlayout" />
 
         <Button
             android:id="@+id/bn_dialog_fragment"
@@ -67,10 +63,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
             android:text="DialogFragment"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bn_constraintlayout" />
+            app:layout_constraintTop_toBottomOf="@+id/bn_relative_layout" />
 
         <Button
             android:id="@+id/bn_grid_view"
@@ -209,6 +204,16 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/bn_dialog_fragment"
             app:layout_constraintTop_toTopOf="@+id/bn_dialog_fragment" />
+
+        <Button
+            android:id="@+id/cl_group_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Group"
+            app:layout_constraintStart_toEndOf="@+id/bn_constraintlayout"
+            app:layout_constraintTop_toTopOf="@+id/bn_constraintlayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

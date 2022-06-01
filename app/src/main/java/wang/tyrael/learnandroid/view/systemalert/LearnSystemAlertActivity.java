@@ -15,7 +15,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import wang.tyrael.learnandroid.MainActivity;
+import learn.MainActivity;
 import wang.tyrael.learnandroid.R;
 
 /**

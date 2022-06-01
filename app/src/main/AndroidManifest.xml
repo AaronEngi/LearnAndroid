@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name="learn.view.constraintlayout.CLGroupActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.edittext.EditTextFocusActivity"
             android:exported="false" />
         <activity
@@ -62,10 +65,10 @@
         <activity android:name=".view.layout.GridLayoutActivity" />
         <activity android:name=".view.ImageViewActivity" />
         <activity android:name=".view.recyclerview.RecyclerViewGridLayoutActivity" />
-        <activity android:name=".view.layout.ConstraintLayoutActivity" />
+        <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".view.ListViewActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="learn.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

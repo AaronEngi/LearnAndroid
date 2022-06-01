@@ -1,4 +1,4 @@
-package wang.tyrael.learnandroid
+package learn
 
 import android.app.Activity
 import android.content.Intent
@@ -7,6 +7,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
 import com.github.aaronengi.learn.android.popupwindow.PopupWindowActivity
+import learn.view.constraintlayout.CLGroupActivity
+import learn.view.constraintlayout.ConstraintLayoutActivity
+import wang.tyrael.learnandroid.R
+import wang.tyrael.learnandroid.StorageFillerActivity
 import wang.tyrael.learnandroid.databinding.ActivityMainBinding
 import wang.tyrael.learnandroid.fragment.LearnDialogFragment
 import wang.tyrael.learnandroid.fragment.LearnParentFragment
@@ -14,7 +18,10 @@ import wang.tyrael.learnandroid.view.*
 import wang.tyrael.learnandroid.view.background.LearnBackgroundActivity
 import wang.tyrael.learnandroid.view.edittext.EditTextFocusActivity
 import wang.tyrael.learnandroid.view.edittext.NoImeEditTextActivity
-import wang.tyrael.learnandroid.view.layout.*
+import wang.tyrael.learnandroid.view.layout.GridLayoutActivity
+import wang.tyrael.learnandroid.view.layout.LinearLayoutActivity
+import wang.tyrael.learnandroid.view.layout.RelativeLayoutActivity
+import wang.tyrael.learnandroid.view.layout.TableLayoutActivity
 import wang.tyrael.learnandroid.view.recyclerview.RecyclerViewGridLayoutActivity
 import wang.tyrael.learnandroid.view.systemalert.LearnSystemAlertActivity
 import wang.tyrael.learnandroid.view.toast.ToastActivity
@@ -78,6 +85,7 @@ class MainActivity : AppCompatActivity() {
         setStartActivityListener(R.id.bn_toast, ToastActivity::class.java)
         setStartActivityListener(R.id.bn_system_alert, LearnSystemAlertActivity::class.java)
         setStartActivityListener(R.id.bn_constraintlayout, ConstraintLayoutActivity::class.java)
+        setStartActivityListener(binding.clGroupButton, CLGroupActivity::class.java)
         setStartActivityListener(R.id.bn_relative_layout, RelativeLayoutActivity::class.java)
         setStartActivityListener(R.id.bn_edittext, NoImeEditTextActivity::class.java)
         setStartActivityListener(R.id.bn_textview, TextViewActivity::class.java)
